@@ -3,10 +3,81 @@
   font-family: 'Lato', sans-serif;
 }
 
+:root {
+  /* Primary color */
+  --Primary-green: hsl(160deg, 100%, 30%);
+
+  /* Secondary color */
+  --secondary-gold-light: hsl(45deg, 100%, 50%);
+  --secondary-gold-dark: hsl(45deg, 100%, 40%);
+
+  /* Grays: */
+  --black: hsl(0deg, 0%, 0%);
+  --very-dark: hsl(0deg, 0%, 10%);
+  --dark-gray: hsl(0deg, 0%, 30%);
+  --medium-gray: hsl(0deg, 0%, 40%);
+  --light-gray: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--dark-gray);
 }
 
 /* Add styles here! */
+
+.green-text {
+  color: var(--Primary-green)
+}
+
+.max-width-wrapper {
+  width: 800px;
+  /* padding: 2rem; */
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.card,
+header {
+  background-color: var(--white);
+}
+
+.card {
+  padding-top: 2px;
+  margin-block-start: 3rem;
+  border-bottom: 10px solid var(--light-gray);
+}
+
+.card p {
+  padding: 1.25rem;
+}
+
+.indented-heading {
+  background-color: var(--secondary-gold-light);
+  padding: 0.75rem;
+  max-width: fit-content;
+  margin-inline-start: -1rem;
+  margin-block-start: 3px;
+  border-bottom: 5px solid var(--secondary-gold-dark);
+}
+
+header {
+  padding: 3rem;
+  line-height: 1.2;
+}
+
+.intro-chunk {
+  width: 300px;
+}
+
+.intro-chunk p {
+  line-height: 1.75;
+}
+
+.title {
+  font-weight: 800;
+  padding-bottom: 1.5rem;
+}
